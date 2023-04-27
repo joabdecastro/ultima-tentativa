@@ -1,0 +1,112 @@
+body{
+    background-image: url(UNIVERSO.jpg);
+    background-color: #7558b89c;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    position: relative;
+   
+}
+
+.content{
+    height: 520px;
+    width: 935px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.navegation{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+}
+
+.bar{
+    width: 70px;
+    height: 17px;
+    border: 2px solid #fff;
+    margin: 6px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.6s;
+}
+
+.bar:hover{
+    background-color: #fff;
+}
+
+input{
+    display: none;
+}
+
+.slides{
+    display: flex;
+    width: 695%;
+    height: 100%;
+}
+
+.slide{
+    width: 20%;
+    transition: 0.6s;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+}
+
+#slide1:checked ~ .s1{
+    margin-left: 0; 
+}
+
+#slide2:checked ~ .s1{
+    margin-left: -18%;
+}
+
+#slide3:checked ~ .s1{
+    margin-left: -43%;
+}
+
+#slide4:checked ~ .s1{
+    margin-left: -63%;
+}
+
+#slide5:checked ~ .s1{
+    margin-left: -83%;
+}
+#slide6:checked ~ .s1{
+    margin-left: -103%;
+}
+#slide7:checked ~ .s1{
+    margin-left: -123%;
+}
+
+.butao{
+    background-color: rgba(57, 60, 206, 0.664);
+    top: 90%;
+    left: 44%;
+    width: 150px;
+    height: 50px;
+    position: absolute;
+    border: none;
+    border-radius: 10px;
+}
+
+.next{
+    width: 150px;
+    height: 50px;
+    color: #fff;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    text-decoration: none;
+}
